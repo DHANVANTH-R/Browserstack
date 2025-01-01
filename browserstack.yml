@@ -1,0 +1,26 @@
+userName: rangashreedhanva_OJgVmR
+accessKey: YpSK7hq742ScUxs6iRyJ
+platforms:
+  - browserName: Chrome
+    os: OS X
+    osVersion: Ventura
+    browserVersion: latest
+  - browserName: Chrome
+    os: Windows
+    osVersion: 11
+    browserVersion: latest
+  - browserName: Firefox
+    os: Windows
+    osVersion: 11
+    browserVersion: latest
+  - browserName: Edge
+    os: Windows
+    osVersion: 11
+    browserVersion: latest
+  - browserName: Chrome
+    os: Windows
+    osVersion: 10
+    browserVersion: latest
+browserstackLocal: true
+buildName: browserstack-build-1
+projectName: BrowserStack Sample
