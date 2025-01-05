@@ -1,6 +1,4 @@
-from selenium.webdriver.chrome.service import Service
 from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -14,7 +12,6 @@ from googletrans import Translator
 import logging
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 options = ChromeOptions()
-#options.set_capability('sessionName', 'BStack Sample Test')
 driver = webdriver.Chrome(options=options)
 driver.maximize_window()
 
