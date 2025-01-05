@@ -46,12 +46,14 @@ def download_image(image_url, file_name):
 def extract_article_data(driver, article_index):
     """Extracts data from an article specified by its index."""
     try:
+        time.sleep(5)
         logging.info(f"Extracting data for article {article_index}...")
-        article_xpath = f'/html/body/main/div[2]/section[1]/div/div/article[{article_index}]/header/h2/a'
+        article_xpath = f'/html/body/main/div[3]/section[1]/div/div/article[{article_index}]/header/h2/a'
         article_link = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.XPATH, article_xpath))
         )
         article_link.click()
+        time.sleep(5)
 
         # Extract title
         title_element = WebDriverWait(driver, 10).until(
